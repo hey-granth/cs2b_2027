@@ -1,11 +1,10 @@
+import Heading from "./Heading.jsx";
+
 const About = () => {
   return (
     <section className="section" id="about">
-      <div className="section-title">
-        <h2>
-          about <span>us</span>
-        </h2>
-      </div>
+
+      <Heading btitle="about" gtitle="us" />
 
       <div className="section-center about-center">
         <div className="about-img">

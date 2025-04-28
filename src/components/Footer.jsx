@@ -1,27 +1,18 @@
+import {menuItems} from "../data.js";
+
 const Footer = () => {
   return (
     <footer class="section footer">
       <ul class="footer-links">
-        <li>
-          <a href="#home" class="footer-link">
-            home
-          </a>
-        </li>
-        <li>
-          <a href="#about" class="footer-link">
-            about
-          </a>
-        </li>
-        <li>
-          <a href="#services" class="footer-link">
-            services
-          </a>
-        </li>
-        <li>
-          <a href="#featured" class="footer-link">
-            featured
-          </a>
-        </li>
+        {
+          menuItems.map((item)  => (
+              <li>
+                <a href={item.link} className="footer-link">
+                  {item.name}
+                </a>
+              </li>
+          ))
+        }
       </ul>
       <ul class="footer-icons">
         <li>
@@ -41,8 +32,8 @@ const Footer = () => {
         </li>
       </ul>
       <p class="copyright">
-        copyright &copy; Backroads travel tours company
-        <span id="date"></span> all rights reserved
+        copyright &copy; Backroads travel tours company |
+        <span id="date"></span>all rights reserved
       </p>
     </footer>
   );

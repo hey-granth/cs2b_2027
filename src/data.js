@@ -3,6 +3,7 @@ export const menuItems = [
   { name: "about", link: "#about" },
   { name: "services", link: "#services" },
   { name: "tours", link: "#tours" },
+  { name: "login", link: "#login" },
 ];
 
 export const socialItems = [
